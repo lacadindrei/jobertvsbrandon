@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title> Jobert vs Brandon </title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- main CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Frijole|Permanent+Marker" rel="stylesheet">
+	<!-- animate.css -->
+	<link rel="stylesheet" href="./assets/css/animate.css">
+
+</head>
+<body>
+	<div id="title">
+		<h1 class="animated slideInLeft"> <span class="primary-red">Jobert</span> vs <span class="primary-blue">Brandon</span></h1>
+		<p class="animated slideInRight"> The battle for the ultimate <strong>TUITT Bootcamper!</strong> </p>
+	</div>
+	<div class="container">
+		<div id="game">
+			<div id="restart-div">
+				<h2 id="show-winner"></h2>
+				<button id="restart">
+					Restart<br>
+					<small class="small_text">(press Enter)</small>
+				</button>
+			</div>
+			<canvas id="canvas" class="animated bounceInUp"></canvas>
+
+			<div id="health-bars">
+				<div class="health-label">
+					<strong id="p1-name">Jobert</strong><br><span id="p1-kills">0</span> KO(s)
+				</div>
+				<div class="health">
+					<span class="fill" id="p1-health"></span>
+				</div>
+				<div class="health">
+					<span class="fill" id="p2-health"></span>
+				</div>
+				<div class="health-label">
+					<strong id="p2-name">Brandon</strong><br><span id="p2-kills">0</span> KO(s)
+				</div>
+			</div>
+		</div>
+		<div id="controls" class="animated fadeInUp">
+			<div id="p1-ctrls">
+				<div class="move" id="p1-left"><span class="arrow-left"></span></div>
+				<div class="move" id="p1-right"><span class="arrow-right"></span></div>
+				<div class="a-btn" id="p1-up">A</div>
+				<div class="b-btn" id="p1-atk">B</div>
+			</div>
+			<div id="p2-ctrls">
+				<div class="move" id="p2-left"><span class="arrow-left"></span></div>
+				<div class="move" id="p2-right"><span class="arrow-right"></span></div>
+				<div class="a-btn" id="p2-up">A</div>
+				<div class="b-btn" id="p2-atk">B</div>
+			</div>
+		</div>
+		<div id="keys">
+			<div id="p1-keys">
+				<kbd>A</kbd>
+				<kbd>D</kbd>
+				<kbd>W</kbd>
+				<kbd>Shift</kbd>
+			</div>
+			<div id="p2-keys">
+				<kbd>&#8592;</kbd>
+				<kbd>&#8594;</kbd>
+				<kbd>&#8593;</kbd>
+				<kbd>Enter</kbd>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
